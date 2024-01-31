@@ -1,0 +1,9 @@
+#there are 2 methods when submitting form, which is 'get' and 'post'#
+#Action is where we want our data to be stored#
+
+<h1>Compose here</h1>
+<form method="POST", action="counter">
+	{% csrf_token %}
+	<textarea name = "text" rows = "30" cols = "60"></textarea><br>
+	<input type="submit"/>
+</form>
